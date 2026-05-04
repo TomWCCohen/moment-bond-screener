@@ -887,7 +887,9 @@ const BASE = 'https://paper.moment-api.com';
 const PALETTE = ['#58a6ff','#3fb950','#e3b341','#bc8cff','#f0883e','#f85149','#79c0ff','#56d364','#ffa198','#d2a8ff'];
 
 const getMK = () => localStorage.getItem('moment_api_key') || DEFAULT_MOMENT_KEY;
-const getCK = () => localStorage.getItem('claude_api_key') || '';
+// Returns the Claude API key — checks localStorage first (user override via Settings),
+// falls back to the demo key pre-loaded for reviewers.
+const getCK = () => localStorage.getItem('claude_api_key') || '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';
 const mHdr  = () => ({'Authorization':`Bearer ${getMK()}`,'Content-Type':'application/json','Accept':'application/json'});
 
 // ══════════════════════════════════════════════
