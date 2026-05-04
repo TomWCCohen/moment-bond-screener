@@ -4,7 +4,7 @@ A single-page fixed income trading platform built on the [Moment API](https://mo
 
 ## Live Demo
 
-> Deploy link here (Vercel)
+> Vercel Link: https://tcohen-moment-bond-screener.vercel.app
 
 ---
 
